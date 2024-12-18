@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:focus {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+svg,
+img {
+  vertical-align: middle;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+svg,
+img {
+  vertical-align: middle;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+:root {
+  --clr-red: hsl(7, 99%, 70%);
+  --clr-yellow: hsl(51, 100%, 49%);
+  --clr-dark-cyan: hsl(167, 40%, 24%);
+  --clr-dark-blue: hsl(198, 62%, 26%);
+  --clr-footer: hsl(168, 34%, 41%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grayish-blue: hsl(233, 8%, 79%);
+  --clr-dark-gray-500: hsl(233, 8%, 79%);
+  --clr-dark-gray-800: hsl(233, 8%, 79%);
+
+  --fs-regular: 18px;
+
+  --ff-paragraph: "Barlow", sans-serif;
+  --ff-title: "Fraunces", sans-serif;
+
+  --fw-p-600: 600;
+  --fw-t-700: 700;
+  --fw-t-900: 900;
+
+  --padding: 2rem;
+}
+
+body {
+  display: grid;
+  place-content: center;
+
+  font-size: var(--fs-regular);
+}
+
+p {
+  font-family: var(--ff-paragraph);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-title);
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  /* grid-auto-columns: 1fr; */
+  /* width: min(90%, 70rem); */
+}
+
+.header-img-mobile {
+}
+
+.logo-img {
+  width: 40%;
+  max-width: 300px;
+}
