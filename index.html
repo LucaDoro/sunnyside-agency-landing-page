@@ -31,33 +31,52 @@
     </style>
   </head>
   <body>
-    <main class="main">
-      <header>
-        <picture>
-          <source
-            class="header-img-desktop"
-            srcset="images/desktop/image-header.jpg"
-            media="(min-width: 800px)"
-          />
-          <img
-            class="header-img-mobile"
-            src="images/mobile/image-header.jpg"
-            alt="header image orange"
-          />
-        </picture>
-        <nav class="navigation-menu">
-          <img
-            class="logo-img"
-            style="background-color: black"
-            src="images/logo.svg"
-            alt="sunnyside-logo"
-          />
-          <div class="menu">About Services Projects Contact</div>
-        </nav>
-        <h1>We are creatives</h1>
-        <i><img src="images/icon-arrow-down.svg" alt="" /></i>
-      </header>
+    <!-- Header -->
 
+    <header>
+      <picture>
+        <source
+          class="header-img-desktop"
+          srcset="images/desktop/image-header.jpg"
+          media="(min-width: 800px)"
+        />
+        <img
+          class="header-img-mobile"
+          src="images/mobile/image-header.jpg"
+          alt="header image orange"
+        />
+      </picture>
+
+      <nav>
+        <div class="navigation-tab">
+          <a href="#" class="logo-link">
+            <img class="logo-img" src="images/logo.svg" alt="sunnyside-logo" />
+          </a>
+          <button>
+            <img
+              class="burger-menu"
+              src="images/icon-hamburger.svg"
+              alt="Open menu"
+            />
+          </button>
+        </div>
+        <ul class="menu-list">
+          <il><a href="">About</a> </il>
+          <il><a href="">Services</a></il>
+          <il><a href="">Projects</a></il>
+          <button>
+            <il><a href="">Contact</a></il>
+          </button>
+        </ul>
+      </nav>
+
+      <h1>We are creatives</h1>
+      <i><img src="images/icon-arrow-down.svg" alt="" /></i>
+    </header>
+
+    <!-- Main content -->
+
+    <main class="main">
       <article class="article_1">
         <picture>
           <source
@@ -175,6 +194,8 @@
           <p>Business Owner</p>
         </article>
       </article>
+
+      <!-- Footer -->
 
       <footer>
         <div class="footer">
