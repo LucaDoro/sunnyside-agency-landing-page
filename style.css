@@ -15,6 +15,7 @@ html {
   border: 0;
   font: inherit;
   background: none;
+  outline: red 1px solid;
 }
 
 body {
@@ -107,7 +108,8 @@ h3 {
 body {
   display: grid;
   place-content: center;
-
+  text-align: center;
+  grid-auto-columns: 1fr;
   font-size: var(--fs-regular);
 }
 
@@ -122,20 +124,27 @@ h4 {
   font-family: var(--ff-title);
 }
 
-body {
-  display: grid;
-  place-content: center;
-  text-align: center;
-  grid-auto-columns: 1fr;
-}
-
 picture img {
   width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.header-image {
+  position: absolute;
 }
 
 .navigation-tab {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .logo-link {
@@ -144,18 +153,42 @@ picture img {
   left: 2rem;
   max-width: 70%;
 }
-.menu-list {
+
+.burger-menu {
+  cursor: pointer;
+  position: absolute;
+  width: 2.5rem;
+}
+
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+header h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+  font-family: var(--ff-title);
+  font-weight: var(--fw-t-900);
+  color: var(--clr-white);
+}
+
+/* .menu-list {
   display: none !important;
   position: absolute;
   top: 7rem;
   right: 10%;
-  display: flex;
   flex-direction: column;
   background-color: white;
   font-family: var(--ff-paragraph);
   color: var(--clr-gray);
   font-size: 1.5rem;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 5rem;
   gap: 2rem;
 }
 
@@ -168,35 +201,13 @@ ul > button {
   font-family: var(--ff-title);
   font-weight: var(--fw-t-700);
   font-size: 18px;
-}
+} */
 
-.menu-list.active {
+/* .menu-list.active {
   display: block;
-}
+} */
 
-.burger-menu {
-  cursor: pointer;
-  position: absolute;
-  width: 2.5rem;
-  top: 2rem;
-  right: 2rem;
-}
-
-header h1 {
-  display: grid;
-  position: absolute;
-  top: 20rem;
-  font-size: 4rem;
-  font-family: var(--ff-title);
-  font-weight: var(--fw-t-900);
-  color: var(--clr-white);
-}
-header i {
-  position: absolute;
-  top: 40rem;
-}
-
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .menu-list {
     display: flex;
     gap: 1rem;
@@ -204,4 +215,4 @@ header i {
   .burger-menu {
     display: none;
   }
-}
+} */
